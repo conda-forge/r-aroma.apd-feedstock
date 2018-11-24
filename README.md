@@ -14,9 +14,8 @@ Summary: DEPRECATED. Do not start building new projects based on this package. (
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-aroma.apd-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-aroma.apd-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-aroma.apd-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-aroma.apd-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-aroma.apd-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-aroma-apd-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-aroma.apd-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-aroma.apd-feedstock)
 
 Current release info
 ====================
