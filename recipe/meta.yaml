@@ -1,4 +1,4 @@
-{% set version = '0.6.0' %}
+{% set version = "0.6.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 1002
+  number: 1003
 
   rpaths:
     - lib/R/lib/
@@ -45,17 +45,14 @@ test:
 about:
   home: 'URL: http://www.aroma-project.org/, https://github.com/HenrikBengtsson/aroma.apd'
 
-  license: LGPL (>= 2.1)
-  summary: DEPRECATED. Do not start building new projects based on this package. (The (in-house)
-    APD file format was initially developed to store Affymetrix probe-level data, e.g.
-    normalized CEL intensities.  Chip types can be added to APD file and similar to
-    methods in the affxparser package, this package provides methods to read APDs organized
-    by units (probesets).  In addition, the probe elements can be arranged optimally
-    such that the elements are guaranteed to be read in order when, for instance, data
-    is read unit by unit.  This speeds up the read substantially.  This package is supporting
-    the Aroma framework and should not be used elsewhere.)
+  license: LGPL-2.1-or-later
+  summary: DEPRECATED. Do not start building new projects based on this package. (The (in-house) APD file format was initially developed to store Affymetrix probe-level data, e.g. normalized CEL intensities.  Chip types can be added to APD file and similar to methods in the affxparser package, this package provides methods
+    to read APDs organized by units (probesets).  In addition, the probe elements can be arranged optimally such that the elements are guaranteed to be read in order when, for instance, data is read unit by unit.  This speeds up the read substantially.  This package is supporting the Aroma framework and should not be used
+    elsewhere.)
   license_family: LGPL
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 extra:
   recipe-maintainers:
     - conda-forge/r
