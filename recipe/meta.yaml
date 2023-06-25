@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/aroma.apd_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/aroma.apd/aroma.apd_{{ version }}.tar.gz
-  sha256: d30f3bcfa756958107f3b3f1e11151278463dcc36da7bdc66819864ab4b6c82f
+  sha256: 9d60ead247edb7bf8d172f14881222adda0893a693f997b0da00c29cfd37d1f6
 
 build:
   noarch: generic
-  number: 2
+  number: 0
 
   rpaths:
     - lib/R/lib/
