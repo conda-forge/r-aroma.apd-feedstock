@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/aroma.apd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/aroma.apd/aroma.apd_{{ version }}.tar.gz
-  sha256: 9d60ead247edb7bf8d172f14881222adda0893a693f997b0da00c29cfd37d1f6
+  sha256: 3d2da19e9483e749c61c2a1eeac82f696c05fe6bef64e0cc924f8419cfd1d9b9
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
